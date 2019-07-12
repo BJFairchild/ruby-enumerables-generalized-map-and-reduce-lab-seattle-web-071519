@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(source_array, starting_point = 0)
-  
+  yield(#{source_array)
   
 end
 
