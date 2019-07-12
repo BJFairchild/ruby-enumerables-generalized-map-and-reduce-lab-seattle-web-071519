@@ -25,5 +25,5 @@ def reduce(source_array, starting_point = nil)
     
     counter += 1
 end
-  
+  return accumulator
 end
