@@ -1,3 +1,5 @@
+require "pry"
+
 def map(array)
   new_array = []
 
@@ -17,7 +19,9 @@ def reduce(source_array, starting_point = nil)
     end
     
     accumulator = starting_point
+  
   while counter < source_array.length do
+    binding.pry
     accumulator = yield(accumulator, source_array[counter])
     
     
