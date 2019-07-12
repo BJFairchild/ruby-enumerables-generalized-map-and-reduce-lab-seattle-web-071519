@@ -8,8 +8,22 @@ def map(array)
   new_array
 end
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_point = nil)
   if starting_point
-  end
+    counter = 0
+  else
+    starting_point = source_array[0]
+    counter = 1
+    end
+    
+    accumulator = starting_point
+  while counter < source_array.length do
+    accumulator = yield(accumulator, source_array[counter])
+    
+    
+    
+    
+    counter += 1
+end
   
-else
+end
