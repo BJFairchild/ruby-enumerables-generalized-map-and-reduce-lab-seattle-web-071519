@@ -21,7 +21,6 @@ def reduce(source_array, starting_point = nil)
     accumulator = starting_point
   
   while counter < source_array.length do
-    binding.pry
     accumulator = yield(accumulator, source_array[counter])
     
     
